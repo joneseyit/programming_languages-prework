@@ -3,11 +3,12 @@ def reformat_languages(languages)
   languages.each do |style, target_lang|
 
     target_lang.each do |language, types|
-        if xyz.has_key != nil
-
+      if new_hash[language] != nil
+        new_hash[language][:style] = new_hash[language][:style].push(style)
+      else  
         new_hash[language] = {type: types[:type], style: [style]}
         #new_hash[language][:style] =  style
-
+      end
     end
   end
   puts new_hash
