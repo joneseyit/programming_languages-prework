@@ -4,7 +4,7 @@ def reformat_languages(languages)
 
     target_lang.each do |language, types|
         if xyz.has_key != nil
-          
+
         new_hash[language] = {type: types[:type], style: [style]}
         #new_hash[language][:style] =  style
 
