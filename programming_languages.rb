@@ -5,7 +5,7 @@ def reformat_languages(languages)
     target_lang.each do |language, types|
       if new_hash[language] != nil
         new_hash[language][:style] = new_hash[language][:style].push(style)
-      else  
+      else
         new_hash[language] = {type: types[:type], style: [style]}
         #new_hash[language][:style] =  style
       end
